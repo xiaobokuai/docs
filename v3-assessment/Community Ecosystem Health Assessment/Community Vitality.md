@@ -141,7 +141,8 @@ A large number of non-code contributors typically indicates a lower barrier to c
 - Weight: 17%
 - Threshold: 1000
 
-The number of community followers is a metric that measures a project’s community influence and external recognition. Followers include users who express their approval of the project and their intention to continue following it by “starring” it, as well as users who replicate and further develop the project by “forking” it. This metric reflects the community’s reach and the potential scale of participation.
+The number of community followers is a metric for measuring a project’s community influence and external recognition. The number of users in the community who follow and share the project solely through stars or forks but do not participate in code commits, pull requests, issues, comments, or other forms of project collaboration reflects the community’s reach and the potential scale of participation.
+
 
 
 # Assessment Model Algorithm
