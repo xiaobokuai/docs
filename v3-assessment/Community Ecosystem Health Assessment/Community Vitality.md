@@ -6,28 +6,28 @@ Definition: Evaluating the community's activity level and attractiveness, reflec
 
 **Community Popularity**
 
-| Metric | URL | Threshold | Weight |
-| ------ | --- | --------- | ------ |
-| Project Stars Growth | [/api/v3/community_popularity/stars](https://oss-compass.org/dataHub#api_v3_community_popularity_stars) | 100 | 0.50 |
-| Project Forks Growth | [/api/v3/community_popularity/forks](https://oss-compass.org/dataHub#api_v3_community_popularity_forks) | 100 | 0.50 |
+| Metric               | URL                                                                                                     | Threshold | Weight |
+| -------------------- | ------------------------------------------------------------------------------------------------------- | --------- | ------ |
+| Project Stars Growth | [/api/v3/community_popularity/stars](https://oss-compass.org/dataHub#api_v3_community_popularity_stars) | 100       | 0.50   |
+| Project Forks Growth | [/api/v3/community_popularity/forks](https://oss-compass.org/dataHub#api_v3_community_popularity_forks) | 100       | 0.50   |
 
 **Contribution Activity**
 
-| Metric | URL | Threshold | Weight |
-| ------ | --- | --------- | ------ |
-| Code Commit Count | [/api/v3/contribution_activity/commit_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_commit_count) | 12850 | 0.20 |
-| Lines of Code Change | [/api/v3/contribution_activity/lines_of_code_change](https://oss-compass.org/dataHub#api_v3_contribution_activity_lines_of_code_change) | 300000 | 0.20 |
-| PR Comment Count | [/api/v3/contribution_activity/pr_comment_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_pr_comment_count) | 10 | 0.20 |
-| New Issue Count | [/api/v3/contribution_activity/new_issue_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_new_issue_count) | 10 | 0.20 |
-| Issue Comment Count | [/api/v3/contribution_activity/issue_comment_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_issue_comment_count) | 10 | 0.20 |
+| Metric               | URL                                                                                                                                     | Threshold | Weight |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------ |
+| Code Commit Count    | [/api/v3/contribution_activity/commit_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_commit_count)                 | 12850     | 0.20   |
+| Lines of Code Change | [/api/v3/contribution_activity/lines_of_code_change](https://oss-compass.org/dataHub#api_v3_contribution_activity_lines_of_code_change) | 300000    | 0.20   |
+| PR Comment Count     | [/api/v3/contribution_activity/pr_comment_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_pr_comment_count)         | 10        | 0.20   |
+| New Issue Count      | [/api/v3/contribution_activity/new_issue_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_new_issue_count)           | 10        | 0.20   |
+| Issue Comment Count  | [/api/v3/contribution_activity/issue_comment_count](https://oss-compass.org/dataHub#api_v3_contribution_activity_issue_comment_count)   | 10        | 0.20   |
 
 **Developer Base**
 
-| Metric | URL | Threshold | Weight |
-| ------ | --- | --------- | ------ |
-| Community Contributor Count | [/api/v3/developer_base/contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_contributor_count) | 2000 | 0.33 |
-| Code Contributor Count | [/api/v3/developer_base/code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_code_contributor_count) | 1000 | 0.33 |
-| Non-Code Contributor Count | [/api/v3/developer_base/non_code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_non_code_contributor_count) | 1000 | 0.34 |
+| Metric                      | URL                                                                                                                                   | Threshold | Weight |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------ |
+| Community Contributor Count | [/api/v3/developer_base/contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_contributor_count)                   | 2000      | 0.33   |
+| Code Contributor Count      | [/api/v3/developer_base/code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_code_contributor_count)         | 1000      | 0.33   |
+| Non-Code Contributor Count  | [/api/v3/developer_base/non_code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_non_code_contributor_count) | 1000      | 0.34   |
 
 # Metrics in Assessment Model
 
@@ -117,11 +117,11 @@ Code contributor count reflects the community's technical contribution capabilit
 
 ### Non-Code Contributor Count
 
-- Definition: The number of people participating in non-code contributions during the statistical period.
+- Definition: The number of users who have made any contributions in the community during the statistical period, including but not limited to creating or commenting on issues, participating in project discussions, etc., but have not engaged in any code-related behaviors.
 - Weight: 34%
 - Threshold: 1000
 
-Non-code contributor count reflects the community's diversified participation level. Non-code contributions include documentation writing, translation, testing, design, community operations, and other forms. This metric can reflect the community's inclusiveness and participation threshold.
+The number of non-code contributors reflects the degree of diverse participation in the community. This metric excludes all contributors directly involved in code production, thereby quantifying the diverse contributor groups purely composed of Issue interactions, project management, project discussions, and lightweight community participation. This indicator can reflect the inclusiveness and participation threshold of the community.
 
 # Assessment Model Algorithm
 
