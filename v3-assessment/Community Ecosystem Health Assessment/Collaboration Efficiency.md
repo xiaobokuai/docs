@@ -17,14 +17,14 @@ Definition: Evaluating the community's collaboration quality and response effici
 
 **Collaboration Development Quality**
 
-| Metric | URL | Threshold | Weight |
-| ------ | --- | --------- | ------ |
-| PR Code Submission Rate | [/api/v3/collaboration_quality/pr_merge_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_merge_rate) | 1 | 0.17 |
-| PR/Issue Link Rate | [/api/v3/collaboration_quality/pr_issue_link_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_issue_link_rate) | 1 ratio | 0.17 |
+| Metric | URL                                                                                                                                                     | Threshold | Weight |
+| ------ |---------------------------------------------------------------------------------------------------------------------------------------------------------| --------- | ------ |
+| PR Code Submission Rate | [/api/v3/collaboration_quality/pr_commit_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_commit_rate)                              | 1 | 0.17 |
+| PR/Issue Link Rate | [/api/v3/collaboration_quality/pr_issue_link_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_issue_link_rate)                     | 1 ratio | 0.17 |
 | PR Review Participation Rate | [/api/v3/collaboration_quality/pr_review_participation_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_review_participation_rate) | 1 ratio | 0.17 |
-| Merge Collaboration Rate | [/api/v3/collaboration_quality/pr_non_author_merge_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_non_author_merge_rate) | 1 ratio | 0.17 |
-| PR Average Interactions | [/api/v3/collaboration_quality/pr_average_interactions](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_average_interactions) | 1 | 0.17 |
-| Tiered Code Review Time | [/api/v3/collaboration_quality/pr_review_time_by_size](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_review_time_by_size) | 10 days | 0.17 |
+| Merge Collaboration Rate | [/api/v3/collaboration_quality/pr_non_author_merge_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_non_author_merge_rate)         | 1 ratio | 0.17 |
+| PR Average Interactions | [/api/v3/collaboration_quality/pr_average_interactions](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_average_interactions)           | 1 | 0.17 |
+| Tiered Code Review Time | [/api/v3/collaboration_quality/pr_review_time_by_size](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_review_time_by_size)             | 10 days | 0.17 |
 
 # Metrics in Assessment Model
 
@@ -54,7 +54,7 @@ Issue first response time is a key indicator of community response speed. This m
 - Weight: 17%
 - Threshold: 60 days
 
-Issue processing time reflects the community's efficiency in solving problems. This metric counts the processing time of new Issues during the statistical period: for closed Issues, the difference between the closure time and the creation time is taken; for unclosed Issues, the difference between the statistical moment and the creation time is taken. A shorter processing time indicates that the community can quickly solve user problems and improve user satisfaction.
+Issue processing time reflects the community's efficiency in solving problems. This metric counts the processing time of new Issues during the statistical period: for closed Issues, the difference between the closure time and the creation time is taken; for unclosed Issues, the difference between the period cutoff (statistical moment) and the creation time is taken. A shorter processing time indicates that the community can quickly solve user problems and improve user satisfaction.
 
 ### PR Unresponsive Rate
 
@@ -78,7 +78,7 @@ PR first response time is a key indicator of the community's response speed to c
 - Weight: 17%
 - Threshold: 30 days
 
-PR processing time reflects the community's efficiency in handling code contributions. This metric counts the processing time of new PRs during the statistical period: for merged or closed PRs, the difference between the end time and the creation time is taken; for unfinished PRs, the difference between the start of the current period and the creation time is taken (average value, in days). A shorter processing time can reduce contributor waiting time and lower the risk of merge conflicts. This metric is an important indicator for evaluating community collaboration efficiency.
+PR processing time reflects the community's efficiency in handling code contributions. This metric counts the processing time of new PRs during the statistical period: for merged or closed PRs, the difference between the end time and the creation time is taken; for unfinished PRs, the difference between the period cutoff (statistical moment) and the creation time is taken (average value, in days). A shorter processing time can reduce contributor waiting time and lower the risk of merge conflicts. This metric is an important indicator for evaluating community collaboration efficiency.
 
 ## Collaboration Development Quality
 

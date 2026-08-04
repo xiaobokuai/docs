@@ -122,6 +122,8 @@ Code contributor count reflects the community's technical contribution capabilit
 
 - PR Merger: Contributors who merge Pull Requests into the target branch.
 
+- PR Commenter: Contributors who comment on the Pull Requests.
+
 Code contributors are the core force driving the project's technical development. This metric can reflect the project's technical attractiveness and development activity.
 
 ### Non-Code Contributor Count
